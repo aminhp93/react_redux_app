@@ -24,6 +24,7 @@ class SettingsForm extends React.Component {
       const state = this.state;
       const newState = Object.assign({}, state, { [field]: ev.target.value });
       this.setState(newState);
+      console.log(newState)
     };
 
     this.submitForm = ev => {
